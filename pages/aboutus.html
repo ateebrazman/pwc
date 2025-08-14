@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="headerandfooter.css" />
+    <link rel="stylesheet" href="st.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="wrapper-box">
+        <div class="main-content">
+          <!-- Navbar Section -->
+          <header id="site-header">
+            <nav class="navbar">
+              <div class="navbar-container">
+                <div class="navbar-subcontainer">
+                  <!-- Logo -->
+                  <div class="navbar-brand">
+                    <div class="brand-logo">
+                      <img src="/assets/LOGOS.png" alt="Logo" />
+                    </div>
+                  </div>
+
+                  <!-- Icons -->
+                  <div class="navbar-actions">
+                    <div class="search-wrapper">
+                      <input
+                        type="text"
+                        placeholder="Type to search..."
+                        class="expand-input"
+                        id="search-input"
+                      />
+                      <span class="icon-button" id="search-icon">
+                        <lord-icon
+                          src="https://cdn.lordicon.com/wjyqkiew.json"
+                          trigger="hover"
+                          colors="primary:#000000,secondary:#000000"
+                        ></lord-icon>
+                      </span>
+                    </div>
+                    <span class="icon-button">
+                      <lord-icon
+                        src="https://cdn.lordicon.com/lplofcfe.json"
+                        trigger="hover"
+                        colors="primary:#000000,secondary:#000000"
+                      ></lord-icon>
+                    </span>
+                    <span class="icon-button">
+                      <lord-icon
+                        src="https://cdn.lordicon.com/ozlkyfxg.json"
+                        trigger="hover"
+                        colors="primary:#000000,secondary:#000000"
+                      ></lord-icon>
+                    </span>
+                  </div>
+
+                  <!-- Hamburger -->
+                  <div id="menuToggle">
+                    <div class="cart">
+                      <a href="#">Cart(0)</a>
+                    </div>
+                    <input id="checkbox" type="checkbox" />
+                    <label class="toggle" for="checkbox">
+                      <div class="bar bar--top"></div>
+                      <div class="bar bar--middle"></div>
+                      <div class="bar bar--bottom"></div>
+                    </label>
+                  </div>
+
+                  <!-- Desktop Menu -->
+                  <div class="navbar-menu" id="navbar-menu">
+                    <ul class="nav-list">
+                      <li><a href="#home" class="nav-link">Home</a></li>
+                      <li><a href="about" class="nav-link">About</a></li>
+
+                      <li class="nav-item dropdown">
+                        <a id="dropdown-btn" class="nav-link dropdown">
+                          Products
+                          <button class="dropdown-btn">
+                            <lord-icon
+                              src="https://cdn.lordicon.com/gqfozvrp.json"
+                              trigger="hover"
+                              state="hover-arrow-down-2"
+                              style="width: 0.8vw; height: 0.8vw"
+                            ></lord-icon>
+                          </button>
+                        </a>
+
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu">
+                          <div class="column">
+                            <h4>Home Page</h4>
+                            <a href="#">About</a>
+                            <a href="#">Services</a>
+                            <a href="#">Team</a>
+                            <a href="#">Blog</a>
+                            <a href="/pages/contact.html">Contact</a>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li><a href="gallery" class="nav-link">Gallery</a></li>
+                      <li><a href="service" class="nav-link">Service</a></li>
+
+                      <li>
+                        <a href="/pages/contact.html" class="nav-link contact"
+                          >Contact Us</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Mobile Menu -->
+                  <div class="menu" id="menu">
+                    <ul>
+                      <li class="sidelinks"><a href="#home">Home</a></li>
+                      <li class="sidelinks"><a href="#about">About</a></li>
+                      <li class="sidelinks">
+                        <a href="#services">Services</a>
+                      </li>
+                      <li class="sidelinks">
+                        <a href="/pages/contact.html">Contact Us</a>
+                      </li>
+                      <li class="sidelinks">
+                        <a href="#products">Products</a>
+                      </li>
+                      <li class="sidelinks"><a href="#gallery">Gallery</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </header>
+          <!-- Main Content -->
+          <div class="about-hero-layout">
+            <div class="about-hero-left">
+              <div class="about-hero-typography-wrap">
+                <h1 class="h1 text-center-mobile">Best Way To Find Perfect</h1>
+                <p class="banner-paragraph text-center-mobile">
+                  Your trusted real estate partner, helping you buy, sell, and
+                  invest with confidence. Discover expert guidance and seamless
+                  property solutions with us.
+                </p>
+              </div>
+              <div class="about-hero-image-wrap">
+                <img
+                  src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680c65f13b92be3e6a8a424e_Best%20Way%20image%20Two.webp"
+                  alt=""
+                  class="about-hero-image"
+                />
+              </div>
+            </div>
+
+            <div class="avout-hero-right">
+              <div class="about-hero-right-image-wrap">
+                <img
+                  src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680c65f1458a2826d34782cc_Best%20Way%20Image.webp"
+                  alt=""
+                  class="about-hero-image-right"
+                />
+              </div>
+              <div class="about-hero-client-layout">
+                <div class="about-hero-lable-wrap">
+                  <p class="label">OUR CLIENTS</p>
+                </div>
+                <div class="about-hero-client-wrap">
+                  <img
+                    src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/6808c134f9d109dcdb702760_Logo%20One.svg"
+                    alt=""
+                    class="our-client-logo"
+                  />
+                  <img
+                    src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/6808c134691b910f9719a1db_Logo%20Two.svg"
+                    alt=""
+                    class="our-client-logo logo-one"
+                  />
+                  <img
+                    src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/6808c134a0191cf254bade8f_Logo%20Three.svg"
+                    alt=""
+                    class="our-client-logo logo-two"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- mession section -->
+          <div class="common-layout">
+            <div class="mission-layout">
+              <!-- Mission Card -->
+              <div class="mission-card-wrap">
+                <div class="mission-card-typography-wrap">
+                  <div class="mission-title-box-wrap">
+                    <div class="mission-card-icon-wrap">
+                      <img
+                        src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680c723334808eee31ede960_Mission%20Icon.svg"
+                        alt=""
+                        class="mission-card-icon"
+                      />
+                    </div>
+                    <h2 class="h4">OUR MISSION</h2>
+                  </div>
+                  <p class="paragraph-small mission-text">
+                    To provide exceptional real estate services by prioritizing
+                    our clients' needs, offering expert advice, and delivering
+                    tailored solutions that make buying, selling, and investing
+                    seamless and successful.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Vision Card -->
+              <div class="mission-card-wrap vision-card">
+                <div class="mission-card-typography-wrap">
+                  <div class="mission-title-box-wrap">
+                    <div class="mission-card-icon-wrap">
+                      <img
+                        src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680c7233d81697df3f887196_Vision%20Icon.svg"
+                        alt=""
+                        class="mission-card-icon"
+                      />
+                    </div>
+                    <h2 class="h4">OUR VISION</h2>
+                  </div>
+                  <p class="paragraph-small mission-text">
+                    To be the leading real estate agency known for innovation,
+                    integrity, and customer-centric services, transforming the
+                    real estate experience and helping individuals and families
+                    achieve their dreams.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Values Card -->
+              <div class="mission-card-wrap value-card-last">
+                <div class="mission-card-typography-wrap">
+                  <div class="mission-title-box-wrap">
+                    <div class="mission-card-icon-wrap">
+                      <img
+                        src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680c7234065cf441c5115603_Values%20Icon.svg"
+                        alt=""
+                        class="mission-card-icon"
+                      />
+                    </div>
+                    <h2 class="h4">OUR VALUES</h2>
+                  </div>
+                  <p class="paragraph-small mission-text">
+                    At the heart of our business are the values that guide
+                    everything we do. We believe in operating with integrity,
+                    ensuring transparency and honesty in all our dealings. Our
+                    commitment to excellence means
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- secton we are -->
+          <div class="common-layout">
+            <div class="about-us-layout">
+              <!-- Left Side: Image -->
+              <div class="about-us-left">
+                <div class="about-us-image-wrap">
+                  <img
+                    src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680c89cf5120df33e17118a7_About%20Us%20Image.webp"
+                    alt="About Us Image"
+                    class="about-us-image"
+                    srcset="
+                      https://cdn.prod.website-files.com/680723134a904799d0d691f7/680c89cf5120df33e17118a7_About%20Us%20Image-p-500.webp   500w,
+                      https://cdn.prod.website-files.com/680723134a904799d0d691f7/680c89cf5120df33e17118a7_About%20Us%20Image-p-800.webp   800w,
+                      https://cdn.prod.website-files.com/680723134a904799d0d691f7/680c89cf5120df33e17118a7_About%20Us%20Image-p-1080.webp 1080w,
+                      https://cdn.prod.website-files.com/680723134a904799d0d691f7/680c89cf5120df33e17118a7_About%20Us%20Image-p-1600.webp 1600w,
+                      https://cdn.prod.website-files.com/680723134a904799d0d691f7/680c89cf5120df33e17118a7_About%20Us%20Image.webp        1716w
+                    "
+                    sizes="100vw"
+                  />
+                </div>
+              </div>
+
+              <!-- Right Side: Text -->
+              <div class="about-us-right">
+                <div class="about-us-text-box">
+                  <div class="about-us-typography-wrap">
+                    <p class="label">WHO WE ARE</p>
+
+                    <div class="about-us-text-wrap">
+                      <h2 class="h2 land-text-center">
+                        WE ARE PASSIONATE BECAUSE
+                      </h2>
+                      <p class="paragraph-large who-we-are">
+                        We're passionate because we believe in making a
+                        difference, providing exceptional service, and helping
+                        our clients achieve their real estate goals with
+                        confidence and ease.
+                      </p>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="success-card-wrap">
+                      <div class="success-card">
+                        <h3 class="success-text">30K</h3>
+                        <p class="paragraph-small">Successful Project</p>
+                      </div>
+                      <div class="success-card center-card">
+                        <h3 class="success-text">25K</h3>
+                        <p class="paragraph-small">Satisfied Clients</p>
+                      </div>
+                      <div class="success-card right">
+                        <h3 class="success-text">18+</h3>
+                        <p class="paragraph-small">Years In Market</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- products -->
+          <div class="common-layout">
+            <div class="feature-layout">
+              <!-- Left Section -->
+              <div class="feature-left">
+                <div class="featured-typography-wrap">
+                  <h2 class="h2">FEATURED WATER HEATER PUMPS</h2>
+                  <p class="paragraph-large featured">
+                    Explore our top-rated water heater pumps, chosen for their
+                    efficiency, durability, and exceptional performance. Perfect
+                    for residential, commercial, and industrial needs.
+                  </p>
+                </div>
+                <a href="/products" class="button w-button">See All Pumps</a>
+              </div>
+
+              <!-- Right Section -->
+              <div class="feature-right">
+                <!-- Top Featured Item -->
+                <div class="feature-right-top">
+                  <div class="feature-top-collection-list">
+                    <div class="feature-top-collection-item">
+                      <div class="feature-top-image">
+                        <img
+                          class="about-image-box"
+                          src="https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc035fb50442c848dc905_Countryside%20Family%20Estate.webp"
+                          alt="Premium Solar Water Heater Pump"
+                          sizes="100vw"
+                          srcset="
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc035fb50442c848dc905_Countryside%20Family%20Estate-p-500.webp   500w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc035fb50442c848dc905_Countryside%20Family%20Estate-p-800.webp   800w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc035fb50442c848dc905_Countryside%20Family%20Estate-p-1080.webp 1080w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc035fb50442c848dc905_Countryside%20Family%20Estate-p-1600.webp 1600w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc035fb50442c848dc905_Countryside%20Family%20Estate-p-2000.webp 2000w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc035fb50442c848dc905_Countryside%20Family%20Estate.webp        2574w
+                          "
+                        />
+                      </div>
+                      <div class="feature-top-typography-wrap">
+                        <h3 class="h5">Premium Solar Water Heater Pump</h3>
+                        <p class="paragraph-small">
+                          Eco-friendly, energy-efficient, and built for
+                          long-term performance.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Bottom Featured Items -->
+                <div class="feature-right-bottom">
+                  <div class="feature-bottom-collection-list">
+                    <div class="feature-bottom-item">
+                      <div class="feature-bottom-image">
+                        <img
+                          class="bottom-image"
+                          src="https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc0bb5120df33e193178a_Oceanfront%20Penthouse.webp"
+                          alt="Heavy-Duty Commercial Water Heater Pump"
+                          sizes="100vw"
+                          srcset="
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc0bb5120df33e193178a_Oceanfront%20Penthouse-p-500.webp   500w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc0bb5120df33e193178a_Oceanfront%20Penthouse-p-800.webp   800w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc0bb5120df33e193178a_Oceanfront%20Penthouse-p-1080.webp 1080w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc0bb5120df33e193178a_Oceanfront%20Penthouse-p-1600.webp 1600w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc0bb5120df33e193178a_Oceanfront%20Penthouse-p-2000.webp 2000w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc0bb5120df33e193178a_Oceanfront%20Penthouse.webp        2574w
+                          "
+                        />
+                      </div>
+                      <div class="feature-bottom-typography-wrap">
+                        <h3 class="h5">
+                          Heavy-Duty Commercial Water Heater Pump
+                        </h3>
+                        <p class="paragraph-small">
+                          Perfect for high-demand applications with superior
+                          heating efficiency.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="feature-bottom-item">
+                      <div class="feature-bottom-image">
+                        <img
+                          class="bottom-image"
+                          src="https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc1717698371510c21fbf_Residential%20Apartment.webp"
+                          alt="Compact Residential Water Heater Pump"
+                          sizes="100vw"
+                          srcset="
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc1717698371510c21fbf_Residential%20Apartment-p-500.webp   500w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc1717698371510c21fbf_Residential%20Apartment-p-800.webp   800w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc1717698371510c21fbf_Residential%20Apartment-p-1080.webp 1080w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc1717698371510c21fbf_Residential%20Apartment-p-1600.webp 1600w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc1717698371510c21fbf_Residential%20Apartment-p-2000.webp 2000w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc1717698371510c21fbf_Residential%20Apartment.webp        2574w
+                          "
+                        />
+                      </div>
+                      <div class="feature-bottom-typography-wrap">
+                        <h3 class="h5">
+                          Compact Residential Water Heater Pump
+                        </h3>
+                        <p class="paragraph-small">
+                          Space-saving, quiet, and perfect for small homes or
+                          apartments.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- listed projeacts -->
+          <div class="common-layout">
+            <div class="properties-title-wrap">
+              <h1 class="h1">listed properties</h1>
+            </div>
+
+            <div class="properties-list-wrap">
+              <!-- Residential Water Heater Pumps -->
+              <div class="property-item-box">
+                <div class="property-list-box">
+                  <img
+                    src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/681327ef778407029b7c4d6c_Cottage.svg"
+                    loading="lazy"
+                    alt="Residential Pump Icon"
+                    class="property-list-icon"
+                  />
+                  <div class="property-text-wrap">
+                    <h3 class="h5">Residential Pumps</h3>
+                    <p class="paragraph-small">35 Models Available</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Commercial Water Heater Pumps -->
+              <div class="property-item-box property-list">
+                <div class="property-list-box">
+                  <img
+                    src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/681327ef953a8f7734b9219c_DUPLEX.svg"
+                    loading="lazy"
+                    alt="Commercial Pump Icon"
+                    class="property-list-icon"
+                  />
+                  <div class="property-text-wrap">
+                    <h3 class="h5">Commercial Pumps</h3>
+                    <p class="paragraph-small">84 Models Available</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Solar Water Heater Pumps -->
+              <div class="property-item-box apartment">
+                <div class="property-list-box">
+                  <img
+                    src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/681327ef3992d3052b10f2b7_APARTMENT.svg"
+                    loading="lazy"
+                    alt="Solar Pump Icon"
+                    class="property-list-icon"
+                  />
+                  <div class="property-text-wrap">
+                    <h3 class="h5">Solar Pumps</h3>
+                    <p class="paragraph-small">40 Models Available</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Industrial Water Heater Pumps -->
+              <div class="property-item-box porperty-box">
+                <div class="property-list-box">
+                  <img
+                    src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/681327ef47d617ddb7df4585_VILLA.svg"
+                    loading="lazy"
+                    alt="Industrial Pump Icon"
+                    class="property-list-icon"
+                  />
+                  <div class="property-text-wrap">
+                    <h3 class="h5">Industrial Pumps</h3>
+                    <p class="paragraph-small">20 Models Available</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- sapce for the conatact -->
+          <div class="common-layout">
+            <div class="contact-banner-layout">
+              <a href="/contact" class="contact-text-wrap w-inline-block">
+                <h1 class="h1 contact-text">WE’RE HERE. LET'S TALK</h1>
+                <div class="contact-arrow w-embed">
+                  <svg
+                    viewBox="0 0 43 44"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.1032 0.926059C10.458 0.789602 10.7512 0.74901 11.1304 0.749245C11.2421 0.748931 11.3538 0.748619 11.4689 0.748296C11.6525 0.748985 11.6525 0.748983 11.8397 0.749686C12.0351 0.749485 12.0351 0.749485 12.2345 0.749279C12.596 0.749064 12.9576 0.749557 13.3191 0.750347C13.709 0.751026 14.0989 0.750795 14.4888 0.750675C15.1643 0.750592 15.8398 0.751087 16.5153 0.751973C17.492 0.753252 18.4687 0.753662 19.4453 0.753862C21.0299 0.754204 22.6144 0.755251 24.199 0.756741C25.7383 0.758187 27.2776 0.759301 28.8169 0.75997C28.9592 0.760032 28.9592 0.760032 29.1044 0.760096C29.5804 0.760299 30.0563 0.7605 30.5323 0.760695C34.4811 0.762329 38.4299 0.765103 42.3788 0.768619C42.5153 1.12334 42.5558 1.41654 42.5556 1.79574C42.5559 1.90747 42.5562 2.01919 42.5566 2.1343C42.5561 2.25667 42.5556 2.37904 42.5552 2.50512C42.5553 2.63539 42.5554 2.76566 42.5556 2.89988C42.5558 3.26143 42.5553 3.62296 42.5545 3.98451C42.5538 4.3744 42.5541 4.7643 42.5542 5.1542C42.5543 5.8297 42.5538 6.50521 42.5529 7.18071C42.5516 8.15738 42.5512 9.13405 42.551 10.1107C42.5506 11.6953 42.5496 13.2798 42.5481 14.8644C42.5467 16.4037 42.5456 17.943 42.5449 19.4823C42.5448 19.6246 42.5448 19.6246 42.5448 19.7698C42.5446 20.2457 42.5444 20.7217 42.5442 21.1976C42.5425 25.1465 42.5398 29.0953 42.5362 33.0442C42.185 33.1678 41.9069 33.2209 41.5334 33.2195C41.4294 33.2195 41.3254 33.2195 41.2182 33.2195C41.107 33.2186 40.9958 33.2178 40.8813 33.217C40.7093 33.2167 40.7093 33.2167 40.5338 33.2163C40.1681 33.2154 39.8023 33.2135 39.4366 33.2115C39.1884 33.2107 38.9403 33.21 38.6921 33.2093C38.0842 33.2076 37.4763 33.2049 36.8683 33.2016C34.5117 26.1316 36.7109 18.2973 36.7109 10.8449C20.6176 26.8603 20.6176 26.8603 4.19917 43.1992C2.84832 41.8483 1.49747 40.4975 0.105686 39.1057C10.7826 28.3768 21.4595 17.6479 32.46 6.59396C25.1342 6.59396 17.8084 6.59396 10.2607 6.59396C10.1279 6.1956 10.0838 5.99189 10.0854 5.59108C10.0854 5.4871 10.0854 5.38311 10.0854 5.27598C10.0862 5.16477 10.087 5.05356 10.0879 4.93898C10.0882 4.767 10.0882 4.767 10.0885 4.59155C10.0894 4.2258 10.0914 3.86007 10.0934 3.49433C10.0942 3.24617 10.0949 2.99802 10.0956 2.74986C10.0973 2.14192 10.0999 1.53399 10.1032 0.926059Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Footer -->
+        <footer id="footer">
+            <div class="common-layout bottom-no-border">
+              <div class="footer-layout">
+                <!-- Left Side -->
+                <div class="footer-left">
+                  <div class="footer-left-content-wrap">
+                    <div class="footer-logo-text-wrap">
+                      <a href="/index.html" class="logo-wrap">
+                        <img
+                          src="./assets/LOGOS.png"
+                          alt="power world climate Logo"
+                          class="company-logo"
+                        />
+                      </a>
+                      <p class="paragraph-small footer-text">
+                        Delivering trusted property solutions, we guide you to
+                        the perfect investment.
+                      </p>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="footer-social-icons">
+                      <!-- Twitter -->
+                      <a
+                        href="https://twitter.com/"
+                        target="_blank"
+                        aria-label="Twitter"
+                        class="social-icons"
+                      >
+                        <div class="icon-border">
+                          <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                              d="M23 2.999a9.4 9.4 0 0 1-2.828.828A4.93 4.93 0 0 0 22.337.366a9.72 9.72 0 0 1-3.127 1.195A4.864 4.864 0 0 0 16.615 0c-2.688 0-4.868 2.18-4.868 4.868 0 .38.045.75.127 1.106A13.84 13.84 0 0 1 1.671.893a4.868 4.868 0 0 0 1.505 6.49A4.79 4.79 0 0 1 .96 6.95v.061c0 2.312 1.645 4.24 3.825 4.675a4.885 4.885 0 0 1-2.192.083 4.868 4.868 0 0 0 4.54 3.374A9.76 9.76 0 0 1 0 19.54 13.78 13.78 0 0 0 7.548 21.5c9.058 0 14.01-7.503 14.01-14.01 0-.213-.004-.426-.014-.637A10.01 10.01 0 0 0 23 2.999z"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+
+                      <!-- Facebook -->
+                      <a
+                        href="https://facebook.com/"
+                        target="_blank"
+                        aria-label="Facebook"
+                        class="social-icons"
+                      >
+                        <div class="icon-border">
+                          <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                              d="M22.675 0H1.325A1.326 1.326 0 0 0 0 1.325v21.351C0 23.403.597 24 1.325 24h11.49V14.708h-3.13V11.24h3.13V8.41c0-3.1 1.894-4.788 4.657-4.788 1.325 0 2.464.099 2.796.143v3.243h-1.918c-1.504 0-1.795.715-1.795 1.762v2.31h3.587l-.467 3.468h-3.12V24h6.116A1.326 1.326 0 0 0 24 22.676V1.325A1.326 1.326 0 0 0 22.675 0z"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+
+                      <!-- Instagram -->
+                      <a
+                        href="https://instagram.com/"
+                        target="_blank"
+                        aria-label="Instagram"
+                        class="social-icons"
+                      >
+                        <div class="icon-border">
+                          <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                              d="M12 2.163c3.204 0 3.584.012 4.85.07 1.206.057 1.96.246 2.41.415a4.92 4.92 0 0 1 1.79 1.165 4.92 4.92 0 0 1 1.165 1.79c.169.45.358 1.204.415 2.41.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.057 1.206-.246 1.96-.415 2.41a4.92 4.92 0 0 1-1.165 1.79 4.92 4.92 0 0 1-1.79 1.165c-.45.169-1.204.358-2.41.415-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.206-.057-1.96-.246-2.41-.415a4.92 4.92 0 0 1-1.79-1.165 4.92 4.92 0 0 1-1.165-1.79c-.169-.45-.358-1.204-.415-2.41C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.057-1.206.246-1.96.415-2.41a4.92 4.92 0 0 1 1.165-1.79 4.92 4.92 0 0 1 1.79-1.165c.45-.169 1.204-.358 2.41-.415C8.416 2.175 8.796 2.163 12 2.163zm0 1.838c-3.16 0-3.532.012-4.777.07-1.02.047-1.577.217-1.944.363a3.08 3.08 0 0 0-1.12.732 3.08 3.08 0 0 0-.732 1.12c-.146.367-.316.924-.363 1.944-.058 1.245-.07 1.617-.07 4.777s.012 3.532.07 4.777c.047 1.02.217 1.577.363 1.944a3.08 3.08 0 0 0 .732 1.12 3.08 3.08 0 0 0 1.12.732c.367.146.924.316 1.944.363 1.245.058 1.617.07 4.777.07s3.532-.012 4.777-.07c1.02-.047 1.577-.217 1.944-.363a3.08 3.08 0 0 0 1.12-.732 3.08 3.08 0 0 0 .732-1.12c.146-.367.316-.924.363-1.944.058-1.245.07-1.617.07-4.777s-.012-3.532-.07-4.777c-.047-1.02-.217-1.577-.363-1.944a3.08 3.08 0 0 0-.732-1.12 3.08 3.08 0 0 0-1.12-.732c-.367-.146-.924-.316-1.944-.363-1.245-.058-1.617-.07-4.777-.07zM12 5.838a6.162 6.162 0 1 1 0 12.324A6.162 6.162 0 0 1 12 5.838zm0 10.162a3.999 3.999 0 1 0 0-7.998 3.999 3.999 0 0 0 0 7.998zm6.406-11.845a1.44 1.44 0 1 1 0 2.88 1.44 1.44 0 0 1 0-2.88z"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+
+                      <!-- YouTube -->
+                      <a
+                        href="https://youtube.com/"
+                        target="_blank"
+                        aria-label="YouTube"
+                        class="social-icons"
+                      >
+                        <div class="icon-border">
+                          <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                              d="M23.498 6.186a2.96 2.96 0 0 0-2.083-2.096C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.415.59A2.96 2.96 0 0 0 .502 6.186C0 8.1 0 12 0 12s0 3.9.502 5.814a2.96 2.96 0 0 0 2.083 2.096C4.495 20.5 12 20.5 12 20.5s7.505 0 9.415-.59a2.96 2.96 0 0 0 2.083-2.096C24 15.9 24 12 24 12s0-3.9-.502-5.814zM9.75 15.568V8.432L15.818 12 9.75 15.568z"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+
+                      <!-- IndiaMART -->
+                      <a
+                        href="https://www.indiamart.com/"
+                        target="_blank"
+                        aria-label="IndiaMART"
+                        class="social-icons"
+                      >
+                        <div class="icon-border">
+                          <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                              d="M12.001 0C5.37 0 0 5.37 0 12.001c0 6.63 5.37 12 12.001 12s12.001-5.37 12.001-12c0-6.631-5.37-12.001-12.001-12.001zm0 21.818c-5.418 0-9.817-4.399-9.817-9.817 0-5.418 4.399-9.818 9.817-9.818 5.418 0 9.817 4.4 9.817 9.818 0 5.418-4.399 9.817-9.817 9.817zm-.732-15.09c-.524-.006-1.015.21-1.374.572-.36.363-.573.854-.573 1.378v6.644c0 .524.213 1.016.573 1.378.36.363.85.578 1.374.572.524.006 1.015-.21 1.375-.572.36-.363.573-.854.573-1.378V8.678c0-.524-.213-1.015-.573-1.378-.36-.362-.851-.578-1.375-.572z"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Right Side -->
+                <div class="footer-right">
+                  <div class="footer-all-menu-wrap">
+                    <div class="footer-menu-wrap">
+                      <a href="/" class="footer-menu-link">Home</a>
+                      <a href="/about" class="footer-menu-link">About</a>
+                      <a href="/services" class="footer-menu-link">Services</a>
+                      <a href="/properties" class="footer-menu-link"
+                        >products</a
+                      >
+                    </div>
+                    <div class="footer-menu-wrap">
+                      <a href="/team" class="footer-menu-link">gallery</a>
+                      <a href="/contact" class="footer-menu-link">Contact</a>
+                      <a href="/blog" class="footer-menu-link">Blog</a>
+                      <a href="/projects" class="footer-menu-link">Projects</a>
+                    </div>
+                    <div class="footer-menu-wrap">
+                      <a
+                        href="/utility-pages/style-guide"
+                        class="footer-menu-link"
+                      >
+                        <span class="footer-icon-text">
+                          <lord-icon
+                            src="https://cdn.lordicon.com/onmwuuox.json"
+                            trigger="hover"
+                            state="loop-roll"
+                            colors="primary:#121331,secondary:#000000"
+                          ></lord-icon>
+                          91 -595973373
+                        </span>
+                      </a>
+
+                      <a href="/404" class="footer-menu-link">
+                        <span class="footer-icon-text">
+                          <lord-icon
+                            src="https://cdn.lordicon.com/onmwuuox.json"
+                            trigger="hover"
+                            colors="primary:#121331,secondary:#000000"
+                          ></lord-icon>
+                          91-98223242
+                        </span>
+                      </a>
+
+                      <a
+                        href="/utility-pages/changelog"
+                        class="footer-menu-link"
+                      >
+                        <span class="footer-icon-text">
+                          <lord-icon
+                            src="https://cdn.lordicon.com/vpbspaec.json"
+                            trigger="hover"
+                            colors="primary:#121331,secondary:#000000"
+                          ></lord-icon>
+                          buy.heater@climate.com
+                        </span>
+                      </a>
+
+                      <a
+                        href="/utility-pages/licenses"
+                        class="footer-menu-link"
+                      >
+                        <span class="footer-icon-text">
+                          <lord-icon
+                            src="https://cdn.lordicon.com/vcdutftw.json"
+                            trigger="hover"
+                            colors="primary:#121331,secondary:#000000"
+                          ></lord-icon>
+                          Barbarshah Sgr
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom-text-wrap">
+              <p class="footer-bottom-text">
+                © <span id="current-year"></span> PWC | Developed by
+                <a
+                  href="https://ateebramzan.vercel.app"
+                  class="footer-bottom-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ateeb </a
+                >. All rights reserved.
+              </p>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </main>
+    <!-- Your internal scripts -->
+    <script>
+      // current yaer
+      function date() {
+        document.addEventListener("DOMContentLoaded", () => {
+          const year = document.getElementById("current-year");
+          if (year) {
+            year.textContent = new Date().getFullYear();
+          }
+        });
+      }
+      date();
+    </script>
+    <!-- External libraries -->
+    <!-- <div class="custom-cursor"></div>
+    <div class="cursor-ring"></div> -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      defer
+    ></script>
+    <script src="https://cdn.lordicon.com/lordicon.js" defer></script>
+
+    <!-- Your scripts WITH defer -->
+    <script src="/logic-and-animation.js" defer></script>
+    <script src="/gsap.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="headerandfooter.css" />
+    <link rel="stylesheet" href="st.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="wrapper-box">
+        <div class="main-content">
+          <!-- Navbar Section -->
+          <header id="site-header">
+            <nav class="navbar">
+              <div class="navbar-container">
+                <div class="navbar-subcontainer">
+                  <!-- Logo -->
+                  <div class="navbar-brand">
+                    <div class="brand-logo">
+                      <img src="/assets/LOGOS.png" alt="Logo" />
+                    </div>
+                  </div>
+
+                  <!-- Icons -->
+                  <div class="navbar-actions">
+                    <div class="search-wrapper">
+                      <input
+                        type="text"
+                        placeholder="Type to search..."
+                        class="expand-input"
+                        id="search-input"
+                      />
+                      <span class="icon-button" id="search-icon">
+                        <lord-icon
+                          src="https://cdn.lordicon.com/wjyqkiew.json"
+                          trigger="hover"
+                          colors="primary:#000000,secondary:#000000"
+                        ></lord-icon>
+                      </span>
+                    </div>
+                    <span class="icon-button">
+                      <lord-icon
+                        src="https://cdn.lordicon.com/lplofcfe.json"
+                        trigger="hover"
+                        colors="primary:#000000,secondary:#000000"
+                      ></lord-icon>
+                    </span>
+                    <span class="icon-button">
+                      <lord-icon
+                        src="https://cdn.lordicon.com/ozlkyfxg.json"
+                        trigger="hover"
+                        colors="primary:#000000,secondary:#000000"
+                      ></lord-icon>
+                    </span>
+                  </div>
+
+                  <!-- Hamburger -->
+                  <div id="menuToggle">
+                    <div class="cart">
+                      <a href="#">Cart(0)</a>
+                    </div>
+                    <input id="checkbox" type="checkbox" />
+                    <label class="toggle" for="checkbox">
+                      <div class="bar bar--top"></div>
+                      <div class="bar bar--middle"></div>
+                      <div class="bar bar--bottom"></div>
+                    </label>
+                  </div>
+
+                  <!-- Desktop Menu -->
+                  <div class="navbar-menu" id="navbar-menu">
+                    <ul class="nav-list">
+                      <li><a href="#home" class="nav-link">Home</a></li>
+                      <li><a href="about" class="nav-link">About</a></li>
+
+                      <li class="nav-item dropdown">
+                        <a id="dropdown-btn" class="nav-link dropdown">
+                          Products
+                          <button class="dropdown-btn">
+                            <lord-icon
+                              src="https://cdn.lordicon.com/gqfozvrp.json"
+                              trigger="hover"
+                              state="hover-arrow-down-2"
+                              style="width: 0.8vw; height: 0.8vw"
+                            ></lord-icon>
+                          </button>
+                        </a>
+
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu">
+                          <div class="column">
+                            <h4>Home Page</h4>
+                            <a href="#">About</a>
+                            <a href="#">Services</a>
+                            <a href="#">Team</a>
+                            <a href="#">Blog</a>
+                            <a href="/pages/contact.html">Contact</a>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li><a href="gallery" class="nav-link">Gallery</a></li>
+                      <li><a href="service" class="nav-link">Service</a></li>
+
+                      <li>
+                        <a href="/pages/contact.html" class="nav-link contact"
+                          >Contact Us</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Mobile Menu -->
+                  <div class="menu" id="menu">
+                    <ul>
+                      <li class="sidelinks"><a href="#home">Home</a></li>
+                      <li class="sidelinks"><a href="#about">About</a></li>
+                      <li class="sidelinks">
+                        <a href="#services">Services</a>
+                      </li>
+                      <li class="sidelinks">
+                        <a href="/pages/contact.html">Contact Us</a>
+                      </li>
+                      <li class="sidelinks">
+                        <a href="#products">Products</a>
+                      </li>
+                      <li class="sidelinks"><a href="#gallery">Gallery</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </header>
+          <!-- Main Content -->
+          <div class="common-layout">
+            <div class="property-wrap">
+              <h1 class="h1 mobile-text-center">OUR PRODUCTS</h1>
+              <div class="property-filter-box-wrap">
+                <div class="filter-form">
+                  <div class="filter-list-box">
+                    <p class="location-text">Filter by</p>
+                    <div
+                      data-delay="0"
+                      data-hover="false"
+                      class="property-filter w-dropdown"
+                    >
+                      <div class="property-filter-toggle w-dropdown-toggle">
+                        <div class="h5">Location</div>
+                        <div class="filter-icon w-icon-dropdown-toggle"></div>
+                      </div>
+                      <nav class="fliter-list w-dropdown-list">
+                        <div class="w-dyn-list">
+                          <div role="list" class="property-list w-dyn-items">
+                            <div role="listitem" class="w-dyn-item">
+                              <a
+                                href="/product-location/new-york"
+                                class="location-box-wrap w-inline-block"
+                              >
+                                <h5 class="h5">New York</h5>
+                              </a>
+                            </div>
+                            <div role="listitem" class="w-dyn-item">
+                              <a
+                                href="/product-location/miami"
+                                class="location-box-wrap w-inline-block"
+                              >
+                                <h5 class="h5">Miami</h5>
+                              </a>
+                            </div>
+                            <div role="listitem" class="w-dyn-item">
+                              <a
+                                href="/product-location/london"
+                                class="location-box-wrap w-inline-block"
+                              >
+                                <h5 class="h5">London</h5>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter-form middle">
+                  <div class="filter-list-box">
+                    <p class="location-text">Filter by</p>
+                    <div
+                      data-delay="0"
+                      data-hover="false"
+                      class="property-filter w-dropdown"
+                    >
+                      <div class="property-filter-toggle w-dropdown-toggle">
+                        <div class="h5">Category</div>
+                        <div class="filter-icon w-icon-dropdown-toggle"></div>
+                      </div>
+                      <nav class="fliter-list w-dropdown-list">
+                        <div class="w-dyn-list">
+                          <div role="list" class="property-list w-dyn-items">
+                            <div role="listitem" class="w-dyn-item">
+                              <a
+                                href="/category/countryside"
+                                class="category-box-wrap w-inline-block"
+                              >
+                                <h5 class="h5">Countryside</h5>
+                              </a>
+                            </div>
+                            <div role="listitem" class="w-dyn-item">
+                              <a
+                                href="/category/penthouse"
+                                class="category-box-wrap w-inline-block"
+                              >
+                                <h5 class="h5">Penthouse</h5>
+                              </a>
+                            </div>
+                            <div role="listitem" class="w-dyn-item">
+                              <a
+                                href="/category/villa"
+                                class="category-box-wrap w-inline-block"
+                              >
+                                <h5 class="h5">Villa</h5>
+                              </a>
+                            </div>
+                            <div role="listitem" class="w-dyn-item">
+                              <a
+                                href="/category/metroplex"
+                                class="category-box-wrap w-inline-block"
+                              >
+                                <h5 class="h5">Metroplex</h5>
+                              </a>
+                            </div>
+                            <div role="listitem" class="w-dyn-item">
+                              <a
+                                href="/category/residences"
+                                class="category-box-wrap w-inline-block"
+                              >
+                                <h5 class="h5">Residences</h5>
+                              </a>
+                            </div>
+                            <div role="listitem" class="w-dyn-item">
+                              <a
+                                href="/category/apartment"
+                                class="category-box-wrap w-inline-block"
+                              >
+                                <h5 class="h5">Apartment</h5>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter-form">
+                  <div class="filter-list-box">
+                    <p class="location-text">Filter by</p>
+                    <div
+                      data-delay="0"
+                      data-hover="false"
+                      class="property-filter w-dropdown"
+                    >
+                      <div class="property-filter-toggle w-dropdown-toggle">
+                        <div class="h5">Type</div>
+                        <div class="filter-icon w-icon-dropdown-toggle"></div>
+                      </div>
+                      <nav class="fliter-list w-dropdown-list">
+                        <div class="w-dyn-list">
+                          <div role="list" class="property-list w-dyn-items">
+                            <div role="listitem" class="w-dyn-item">
+                              <a
+                                href="/product-type/for-rent"
+                                class="type-box-wrap w-inline-block"
+                              >
+                                <h5 class="h5">For Rent</h5>
+                              </a>
+                            </div>
+                            <div role="listitem" class="w-dyn-item">
+                              <a
+                                href="/product-type/for-sale"
+                                class="type-box-wrap w-inline-block"
+                              >
+                                <h5 class="h5">For Sale</h5>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- productus -->
+          <div class="common-layout">
+            <div class="property-layout">
+              <div class="w-dyn-list">
+                <div role="list" class="property-collection-list w-dyn-items">
+                  <div role="listitem" class="w-dyn-item">
+                    <a
+                      href="/product/luxury-modern-villa-mlbo9"
+                      class="propery-collection-box w-inline-block"
+                    >
+                      <div class="properties-details-image-wrap">
+                        <img
+                          class="properties-details-card"
+                          src="https://cdn.prod.website-files.com/6808644071842d8cf3730cef/6819925415f20028f4f6e4ed_Luxury%20Modern%20Villa.webp"
+                          alt="Luxury Modern Villa"
+                          sizes="100vw"
+                          loading="lazy"
+                          srcset="
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/6819925415f20028f4f6e4ed_Luxury%20Modern%20Villa-p-500.webp   500w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/6819925415f20028f4f6e4ed_Luxury%20Modern%20Villa-p-800.webp   800w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/6819925415f20028f4f6e4ed_Luxury%20Modern%20Villa-p-1080.webp 1080w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/6819925415f20028f4f6e4ed_Luxury%20Modern%20Villa-p-1600.webp 1600w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/6819925415f20028f4f6e4ed_Luxury%20Modern%20Villa-p-2000.webp 2000w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/6819925415f20028f4f6e4ed_Luxury%20Modern%20Villa.webp        2574w
+                          "
+                        />
+                      </div>
+                      <div class="properties-details-typography-wrap">
+                        <div class="propertiese-details-text">
+                          <h3 class="h5">Luxury Modern Villa</h3>
+                          <p class="paragraph-small">
+                            450 Beverly Drive, Beverly Hills, CA 90210
+                          </p>
+                        </div>
+                        <div class="properties-details-information-wrap">
+                          <div class="information-card">
+                            <img
+                              src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680cd6df5aed9ad2b782afa6_Area.svg"
+                              loading="lazy"
+                              alt="Area"
+                              class="information-icon"
+                            />
+                            <p class="paragraph-small">6,500 sq. ft.</p>
+                          </div>
+                          <div class="information-card">
+                            <img
+                              src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680cd6db5120df33e1a01793_Bedroom.svg"
+                              loading="lazy"
+                              alt="Bedrooms"
+                              class="information-icon"
+                            />
+                            <p class="paragraph-small">6</p>
+                          </div>
+                          <div class="information-card">
+                            <img
+                              src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680cd6dbccbfc46d3d5e0724_Bathroom.svg"
+                              loading="lazy"
+                              alt="Bathrooms"
+                              class="information-icon"
+                            />
+                            <p class="paragraph-small">5</p>
+                          </div>
+                          <div class="information-card">
+                            <img
+                              src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680cd6db50b560d2047a0c8c_Parking.svg"
+                              loading="lazy"
+                              alt="Parking"
+                              class="information-icon"
+                            />
+                            <p class="paragraph-small">2</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div role="listitem" class="w-dyn-item">
+                    <a
+                      href="/product/countryside-family-estate"
+                      class="propery-collection-box w-inline-block"
+                    >
+                      <div class="properties-details-image-wrap">
+                        <img
+                          class="properties-details-card"
+                          src="https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc035fb50442c848dc905_Countryside%20Family%20Estate.webp"
+                          alt="Countryside Family Estate"
+                          sizes="100vw"
+                          loading="lazy"
+                          srcset="
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc035fb50442c848dc905_Countryside%20Family%20Estate-p-500.webp   500w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc035fb50442c848dc905_Countryside%20Family%20Estate-p-800.webp   800w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc035fb50442c848dc905_Countryside%20Family%20Estate-p-1080.webp 1080w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc035fb50442c848dc905_Countryside%20Family%20Estate-p-1600.webp 1600w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc035fb50442c848dc905_Countryside%20Family%20Estate-p-2000.webp 2000w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc035fb50442c848dc905_Countryside%20Family%20Estate.webp        2574w
+                          "
+                        />
+                      </div>
+                      <div class="properties-details-typography-wrap">
+                        <div class="propertiese-details-text">
+                          <h3 class="h5">Countryside Family Estate</h3>
+                          <p class="paragraph-small">
+                            150 Aspen Ridge Road, Aspen, CO 81611
+                          </p>
+                        </div>
+                        <div class="properties-details-information-wrap">
+                          <div class="information-card">
+                            <img
+                              src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680cd6df5aed9ad2b782afa6_Area.svg"
+                              loading="lazy"
+                              alt="Area"
+                              class="information-icon"
+                            />
+                            <p class="paragraph-small">5,000 sq. ft.</p>
+                          </div>
+                          <div class="information-card">
+                            <img
+                              src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680cd6db5120df33e1a01793_Bedroom.svg"
+                              loading="lazy"
+                              alt="Bedrooms"
+                              class="information-icon"
+                            />
+                            <p class="paragraph-small">5</p>
+                          </div>
+                          <div class="information-card">
+                            <img
+                              src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680cd6dbccbfc46d3d5e0724_Bathroom.svg"
+                              loading="lazy"
+                              alt="Bathrooms"
+                              class="information-icon"
+                            />
+                            <p class="paragraph-small">4</p>
+                          </div>
+                          <div class="information-card">
+                            <img
+                              src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680cd6db50b560d2047a0c8c_Parking.svg"
+                              loading="lazy"
+                              alt="Parking"
+                              class="information-icon"
+                            />
+                            <p class="paragraph-small">3</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div role="listitem" class="w-dyn-item">
+                    <a
+                      href="/product/oceanfront-penthouse"
+                      class="propery-collection-box w-inline-block"
+                    >
+                      <div class="properties-details-image-wrap">
+                        <img
+                          class="properties-details-card"
+                          src="https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc0bb5120df33e193178a_Oceanfront%20Penthouse.webp"
+                          alt="Oceanfront Penthouse"
+                          sizes="100vw"
+                          loading="lazy"
+                          srcset="
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc0bb5120df33e193178a_Oceanfront%20Penthouse-p-500.webp   500w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc0bb5120df33e193178a_Oceanfront%20Penthouse-p-800.webp   800w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc0bb5120df33e193178a_Oceanfront%20Penthouse-p-1080.webp 1080w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc0bb5120df33e193178a_Oceanfront%20Penthouse-p-1600.webp 1600w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc0bb5120df33e193178a_Oceanfront%20Penthouse-p-2000.webp 2000w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc0bb5120df33e193178a_Oceanfront%20Penthouse.webp        2574w
+                          "
+                        />
+                      </div>
+
+                      <div class="properties-details-typography-wrap">
+                        <div class="propertiese-details-text">
+                          <h3 class="h5">Oceanfront Penthouse</h3>
+                          <p class="paragraph-small">
+                            789 Ocean Drive, Miami Beach, FL 33139
+                          </p>
+                        </div>
+                        <div class="properties-details-information-wrap">
+                          <div class="information-card">
+                            <img
+                              src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680cd6df5aed9ad2b782afa6_Area.svg"
+                              loading="lazy"
+                              alt="Area"
+                              class="information-icon"
+                            />
+                            <p class="paragraph-small">4,200 sq. ft.</p>
+                          </div>
+                          <div class="information-card">
+                            <img
+                              src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680cd6db5120df33e1a01793_Bedroom.svg"
+                              loading="lazy"
+                              alt="Bedrooms"
+                              class="information-icon"
+                            />
+                            <p class="paragraph-small">4</p>
+                          </div>
+                          <div class="information-card">
+                            <img
+                              src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680cd6dbccbfc46d3d5e0724_Bathroom.svg"
+                              loading="lazy"
+                              alt="Bathrooms"
+                              class="information-icon"
+                            />
+                            <p class="paragraph-small">3</p>
+                          </div>
+                          <div class="information-card">
+                            <img
+                              src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680cd6db50b560d2047a0c8c_Parking.svg"
+                              loading="lazy"
+                              alt="Parking"
+                              class="information-icon"
+                            />
+                            <p class="paragraph-small">1</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div role="listitem" class="w-dyn-item">
+                    <a
+                      href="/product/the-metroplex-complex"
+                      class="propery-collection-box w-inline-block"
+                    >
+                      <div class="properties-details-image-wrap">
+                        <img
+                          class="properties-details-card"
+                          src="https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc0f43446ace65ab630fd_The%20Metroplex%20Complex.webp"
+                          alt="The Metroplex Complex"
+                          sizes="100vw"
+                          loading="lazy"
+                          srcset="
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc0f43446ace65ab630fd_The%20Metroplex%20Complex-p-500.webp   500w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc0f43446ace65ab630fd_The%20Metroplex%20Complex-p-800.webp   800w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc0f43446ace65ab630fd_The%20Metroplex%20Complex-p-1080.webp 1080w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc0f43446ace65ab630fd_The%20Metroplex%20Complex-p-1600.webp 1600w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc0f43446ace65ab630fd_The%20Metroplex%20Complex-p-2000.webp 2000w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc0f43446ace65ab630fd_The%20Metroplex%20Complex.webp        2574w
+                          "
+                        />
+                      </div>
+                      <div class="properties-details-typography-wrap">
+                        <div class="propertiese-details-text">
+                          <h3 class="h5">The Metroplex Complex</h3>
+                          <p class="paragraph-small">
+                            102 Fifth Avenue, New York, NY 10011
+                          </p>
+                        </div>
+                        <div class="properties-details-information-wrap">
+                          <div class="information-card">
+                            <img
+                              src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680cd6df5aed9ad2b782afa6_Area.svg"
+                              loading="lazy"
+                              alt="Area"
+                              class="information-icon"
+                            />
+                            <p class="paragraph-small">1,200 sq ft</p>
+                          </div>
+                          <div class="information-card">
+                            <img
+                              src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680cd6db5120df33e1a01793_Bedroom.svg"
+                              loading="lazy"
+                              alt="Bedrooms"
+                              class="information-icon"
+                            />
+                            <p class="paragraph-small">2</p>
+                          </div>
+                          <div class="information-card">
+                            <img
+                              src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680cd6dbccbfc46d3d5e0724_Bathroom.svg"
+                              loading="lazy"
+                              alt="Bathrooms"
+                              class="information-icon"
+                            />
+                            <p class="paragraph-small">2</p>
+                          </div>
+                          <div class="information-card">
+                            <img
+                              src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680cd6db50b560d2047a0c8c_Parking.svg"
+                              loading="lazy"
+                              alt="Parking"
+                              class="information-icon"
+                            />
+                            <p class="paragraph-small">2</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div role="listitem" class="w-dyn-item">
+                    <a
+                      href="/product/residential-apartment"
+                      class="propery-collection-box w-inline-block"
+                    >
+                      <div class="properties-details-image-wrap">
+                        <img
+                          class="properties-details-card"
+                          src="https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc1717698371510c21fbf_Residential%20Apartment.webp"
+                          alt="Residential Apartment"
+                          sizes="100vw"
+                          loading="lazy"
+                          srcset="
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc1717698371510c21fbf_Residential%20Apartment-p-500.webp   500w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc1717698371510c21fbf_Residential%20Apartment-p-800.webp   800w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc1717698371510c21fbf_Residential%20Apartment-p-1080.webp 1080w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc1717698371510c21fbf_Residential%20Apartment-p-1600.webp 1600w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc1717698371510c21fbf_Residential%20Apartment-p-2000.webp 2000w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc1717698371510c21fbf_Residential%20Apartment.webp        2574w
+                          "
+                        />
+                      </div>
+                      <div class="properties-details-typography-wrap">
+                        <div class="propertiese-details-text">
+                          <h3 class="h5">Residential Apartment</h3>
+                          <p class="paragraph-small">
+                            15 Ocean View Drive, Miami, FL 33139
+                          </p>
+                        </div>
+                        <div class="properties-details-information-wrap">
+                          <div class="information-card">
+                            <img
+                              src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680cd6df5aed9ad2b782afa6_Area.svg"
+                              loading="lazy"
+                              alt="Area"
+                              class="information-icon"
+                            />
+                            <p class="paragraph-small">2,400 sq ft</p>
+                          </div>
+                          <div class="information-card">
+                            <img
+                              src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680cd6db5120df33e1a01793_Bedroom.svg"
+                              loading="lazy"
+                              alt="Bedrooms"
+                              class="information-icon"
+                            />
+                            <p class="paragraph-small">3</p>
+                          </div>
+                          <div class="information-card">
+                            <img
+                              src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680cd6dbccbfc46d3d5e0724_Bathroom.svg"
+                              loading="lazy"
+                              alt="Bathrooms"
+                              class="information-icon"
+                            />
+                            <p class="paragraph-small">4</p>
+                          </div>
+                          <div class="information-card">
+                            <img
+                              src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680cd6db50b560d2047a0c8c_Parking.svg"
+                              loading="lazy"
+                              alt="Parking"
+                              class="information-icon"
+                            />
+                            <p class="paragraph-small">1</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div role="listitem" class="w-dyn-item">
+                    <a
+                      href="/product/the-parkview-residences"
+                      class="propery-collection-box w-inline-block"
+                    >
+                      <div class="properties-details-image-wrap">
+                        <img
+                          class="properties-details-card"
+                          src="https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc18549c720006c138ffb_The%20Parkview%20Residences.webp"
+                          alt="The Parkview Residences"
+                          sizes="100vw"
+                          loading="lazy"
+                          srcset="
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc18549c720006c138ffb_The%20Parkview%20Residences-p-500.webp   500w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc18549c720006c138ffb_The%20Parkview%20Residences-p-800.webp   800w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc18549c720006c138ffb_The%20Parkview%20Residences-p-1080.webp 1080w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc18549c720006c138ffb_The%20Parkview%20Residences-p-1600.webp 1600w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc18549c720006c138ffb_The%20Parkview%20Residences-p-2000.webp 2000w,
+                            https://cdn.prod.website-files.com/6808644071842d8cf3730cef/680cc18549c720006c138ffb_The%20Parkview%20Residences.webp        2574w
+                          "
+                        />
+                      </div>
+                      <div class="properties-details-typography-wrap">
+                        <div class="propertiese-details-text">
+                          <h3 class="h5">The Parkview Residences</h3>
+                          <p class="paragraph-small">
+                            29 Green Lane, London, SE79 3KR
+                          </p>
+                        </div>
+                        <div class="properties-details-information-wrap">
+                          <div class="information-card">
+                            <img
+                              src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680cd6df5aed9ad2b782afa6_Area.svg"
+                              loading="lazy"
+                              alt="Area"
+                              class="information-icon"
+                            />
+                            <p class="paragraph-small">1,800 sq ft</p>
+                          </div>
+                          <div class="information-card">
+                            <img
+                              src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680cd6db5120df33e1a01793_Bedroom.svg"
+                              loading="lazy"
+                              alt="Bedrooms"
+                              class="information-icon"
+                            />
+                            <p class="paragraph-small">3</p>
+                          </div>
+                          <div class="information-card">
+                            <img
+                              src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680cd6dbccbfc46d3d5e0724_Bathroom.svg"
+                              loading="lazy"
+                              alt="Bathrooms"
+                              class="information-icon"
+                            />
+                            <p class="paragraph-small">3</p>
+                          </div>
+                          <div class="information-card">
+                            <img
+                              src="https://cdn.prod.website-files.com/680723134a904799d0d691f7/680cd6db50b560d2047a0c8c_Parking.svg"
+                              loading="lazy"
+                              alt="Parking"
+                              class="information-icon"
+                            />
+                            <p class="paragraph-small">2</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- pagination -->
+          <!-- Pagination Container -->
+          <div class="pagination">
+            <a href="#" class="page prev">&laquo;</a>
+            <a href="#" class="page active">1</a>
+            <a href="#" class="page">2</a>
+            <a href="#" class="page">3</a>
+            <a href="#" class="page">4</a>
+            <a href="#" class="page">5</a>
+            <a href="#" class="page next">&raquo;</a>
+          </div>
+
+          <!-- Footer -->
+          <footer id="footer">
+            <div class="common-layout bottom-no-border">
+              <div class="footer-layout">
+                <!-- Left Side -->
+                <div class="footer-left">
+                  <div class="footer-left-content-wrap">
+                    <div class="footer-logo-text-wrap">
+                      <a href="/index.html" class="logo-wrap">
+                        <img
+                          src="/assets/LOGOS.png"
+                          alt="power world climate Logo"
+                          class="company-logo"
+                        />
+                      </a>
+                      <p class="paragraph-small footer-text">
+                        Delivering trusted property solutions, we guide you to
+                        the perfect investment.
+                      </p>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="footer-social-icons">
+                      <!-- Twitter -->
+                      <a
+                        href="https://twitter.com/"
+                        target="_blank"
+                        aria-label="Twitter"
+                        class="social-icons"
+                      >
+                        <div class="icon-border">
+                          <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                              d="M23 2.999a9.4 9.4 0 0 1-2.828.828A4.93 4.93 0 0 0 22.337.366a9.72 9.72 0 0 1-3.127 1.195A4.864 4.864 0 0 0 16.615 0c-2.688 0-4.868 2.18-4.868 4.868 0 .38.045.75.127 1.106A13.84 13.84 0 0 1 1.671.893a4.868 4.868 0 0 0 1.505 6.49A4.79 4.79 0 0 1 .96 6.95v.061c0 2.312 1.645 4.24 3.825 4.675a4.885 4.885 0 0 1-2.192.083 4.868 4.868 0 0 0 4.54 3.374A9.76 9.76 0 0 1 0 19.54 13.78 13.78 0 0 0 7.548 21.5c9.058 0 14.01-7.503 14.01-14.01 0-.213-.004-.426-.014-.637A10.01 10.01 0 0 0 23 2.999z"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+
+                      <!-- Facebook -->
+                      <a
+                        href="https://facebook.com/"
+                        target="_blank"
+                        aria-label="Facebook"
+                        class="social-icons"
+                      >
+                        <div class="icon-border">
+                          <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                              d="M22.675 0H1.325A1.326 1.326 0 0 0 0 1.325v21.351C0 23.403.597 24 1.325 24h11.49V14.708h-3.13V11.24h3.13V8.41c0-3.1 1.894-4.788 4.657-4.788 1.325 0 2.464.099 2.796.143v3.243h-1.918c-1.504 0-1.795.715-1.795 1.762v2.31h3.587l-.467 3.468h-3.12V24h6.116A1.326 1.326 0 0 0 24 22.676V1.325A1.326 1.326 0 0 0 22.675 0z"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+
+                      <!-- Instagram -->
+                      <a
+                        href="https://instagram.com/"
+                        target="_blank"
+                        aria-label="Instagram"
+                        class="social-icons"
+                      >
+                        <div class="icon-border">
+                          <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                              d="M12 2.163c3.204 0 3.584.012 4.85.07 1.206.057 1.96.246 2.41.415a4.92 4.92 0 0 1 1.79 1.165 4.92 4.92 0 0 1 1.165 1.79c.169.45.358 1.204.415 2.41.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.057 1.206-.246 1.96-.415 2.41a4.92 4.92 0 0 1-1.165 1.79 4.92 4.92 0 0 1-1.79 1.165c-.45.169-1.204.358-2.41.415-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.206-.057-1.96-.246-2.41-.415a4.92 4.92 0 0 1-1.79-1.165 4.92 4.92 0 0 1-1.165-1.79c-.169-.45-.358-1.204-.415-2.41C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.057-1.206.246-1.96.415-2.41a4.92 4.92 0 0 1 1.165-1.79 4.92 4.92 0 0 1 1.79-1.165c.45-.169 1.204-.358 2.41-.415C8.416 2.175 8.796 2.163 12 2.163zm0 1.838c-3.16 0-3.532.012-4.777.07-1.02.047-1.577.217-1.944.363a3.08 3.08 0 0 0-1.12.732 3.08 3.08 0 0 0-.732 1.12c-.146.367-.316.924-.363 1.944-.058 1.245-.07 1.617-.07 4.777s.012 3.532.07 4.777c.047 1.02.217 1.577.363 1.944a3.08 3.08 0 0 0 .732 1.12 3.08 3.08 0 0 0 1.12.732c.367.146.924.316 1.944.363 1.245.058 1.617.07 4.777.07s3.532-.012 4.777-.07c1.02-.047 1.577-.217 1.944-.363a3.08 3.08 0 0 0 1.12-.732 3.08 3.08 0 0 0 .732-1.12c.146-.367.316-.924.363-1.944.058-1.245.07-1.617.07-4.777s-.012-3.532-.07-4.777c-.047-1.02-.217-1.577-.363-1.944a3.08 3.08 0 0 0-.732-1.12 3.08 3.08 0 0 0-1.12-.732c-.367-.146-.924-.316-1.944-.363-1.245-.058-1.617-.07-4.777-.07zM12 5.838a6.162 6.162 0 1 1 0 12.324A6.162 6.162 0 0 1 12 5.838zm0 10.162a3.999 3.999 0 1 0 0-7.998 3.999 3.999 0 0 0 0 7.998zm6.406-11.845a1.44 1.44 0 1 1 0 2.88 1.44 1.44 0 0 1 0-2.88z"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+
+                      <!-- YouTube -->
+                      <a
+                        href="https://youtube.com/"
+                        target="_blank"
+                        aria-label="YouTube"
+                        class="social-icons"
+                      >
+                        <div class="icon-border">
+                          <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                              d="M23.498 6.186a2.96 2.96 0 0 0-2.083-2.096C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.415.59A2.96 2.96 0 0 0 .502 6.186C0 8.1 0 12 0 12s0 3.9.502 5.814a2.96 2.96 0 0 0 2.083 2.096C4.495 20.5 12 20.5 12 20.5s7.505 0 9.415-.59a2.96 2.96 0 0 0 2.083-2.096C24 15.9 24 12 24 12s0-3.9-.502-5.814zM9.75 15.568V8.432L15.818 12 9.75 15.568z"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+
+                      <!-- IndiaMART -->
+                      <a
+                        href="https://www.indiamart.com/"
+                        target="_blank"
+                        aria-label="IndiaMART"
+                        class="social-icons"
+                      >
+                        <div class="icon-border">
+                          <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                              d="M12.001 0C5.37 0 0 5.37 0 12.001c0 6.63 5.37 12 12.001 12s12.001-5.37 12.001-12c0-6.631-5.37-12.001-12.001-12.001zm0 21.818c-5.418 0-9.817-4.399-9.817-9.817 0-5.418 4.399-9.818 9.817-9.818 5.418 0 9.817 4.4 9.817 9.818 0 5.418-4.399 9.817-9.817 9.817zm-.732-15.09c-.524-.006-1.015.21-1.374.572-.36.363-.573.854-.573 1.378v6.644c0 .524.213 1.016.573 1.378.36.363.85.578 1.374.572.524.006 1.015-.21 1.375-.572.36-.363.573-.854.573-1.378V8.678c0-.524-.213-1.015-.573-1.378-.36-.362-.851-.578-1.375-.572z"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Right Side -->
+                <div class="footer-right">
+                  <div class="footer-all-menu-wrap">
+                    <div class="footer-menu-wrap">
+                      <a href="/" class="footer-menu-link">Home</a>
+                      <a href="/about" class="footer-menu-link">About</a>
+                      <a href="/services" class="footer-menu-link">Services</a>
+                      <a href="/properties" class="footer-menu-link"
+                        >products</a
+                      >
+                    </div>
+                    <div class="footer-menu-wrap">
+                      <a href="/team" class="footer-menu-link">gallery</a>
+                      <a href="/contact" class="footer-menu-link">Contact</a>
+                      <a href="/blog" class="footer-menu-link">Blog</a>
+                      <a href="/projects" class="footer-menu-link">Projects</a>
+                    </div>
+                    <div class="footer-menu-wrap">
+                      <a
+                        href="/utility-pages/style-guide"
+                        class="footer-menu-link"
+                      >
+                        <span class="footer-icon-text">
+                          <lord-icon
+                            src="https://cdn.lordicon.com/onmwuuox.json"
+                            trigger="hover"
+                            state="loop-roll"
+                            colors="primary:#121331,secondary:#000000"
+                          ></lord-icon>
+                          91 -595973373
+                        </span>
+                      </a>
+
+                      <a href="/404" class="footer-menu-link">
+                        <span class="footer-icon-text">
+                          <lord-icon
+                            src="https://cdn.lordicon.com/onmwuuox.json"
+                            trigger="hover"
+                            colors="primary:#121331,secondary:#000000"
+                          ></lord-icon>
+                          91-98223242
+                        </span>
+                      </a>
+
+                      <a
+                        href="/utility-pages/changelog"
+                        class="footer-menu-link"
+                      >
+                        <span class="footer-icon-text">
+                          <lord-icon
+                            src="https://cdn.lordicon.com/vpbspaec.json"
+                            trigger="hover"
+                            colors="primary:#121331,secondary:#000000"
+                          ></lord-icon>
+                          buy.heater@climate.com
+                        </span>
+                      </a>
+
+                      <a
+                        href="/utility-pages/licenses"
+                        class="footer-menu-link"
+                      >
+                        <span class="footer-icon-text">
+                          <lord-icon
+                            src="https://cdn.lordicon.com/vcdutftw.json"
+                            trigger="hover"
+                            colors="primary:#121331,secondary:#000000"
+                          ></lord-icon>
+                          Barbarshah Sgr
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom-text-wrap">
+              <p class="footer-bottom-text">
+                © <span id="current-year"></span> PWC | Developed by
+                <a
+                  href="https://ateebramzan.vercel.app"
+                  class="footer-bottom-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ateeb </a
+                >. All rights reserved.
+              </p>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </main>
+    <!-- Your internal scripts -->
+    <script>
+      // current yaer
+      function date() {
+        document.addEventListener("DOMContentLoaded", () => {
+          const year = document.getElementById("current-year");
+          if (year) {
+            year.textContent = new Date().getFullYear();
+          }
+        });
+      }
+      date();
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggles = document.querySelectorAll(".property-filter-toggle");
+
+        toggles.forEach((toggle) => {
+          toggle.addEventListener("click", function (e) {
+            e.stopPropagation();
+
+            // Close all other dropdowns
+            document.querySelectorAll(".fliter-list.show").forEach((list) => {
+              if (list !== toggle.nextElementSibling) {
+                list.classList.remove("show");
+              }
+            });
+
+            // Toggle current dropdown
+            toggle.nextElementSibling.classList.toggle("show");
+          });
+        });
+
+        // Handle option selection
+        document.querySelectorAll(".fliter-list a").forEach((option) => {
+          option.addEventListener("click", function (e) {
+            e.preventDefault();
+            const selectedText =
+              this.querySelector("h5")?.innerText || this.innerText;
+            const filterToggle = this.closest(".property-filter").querySelector(
+              ".property-filter-toggle .h5"
+            );
+            if (filterToggle) filterToggle.textContent = selectedText;
+
+            // Close dropdown
+            this.closest(".fliter-list").classList.remove("show");
+
+            // Here you can add actual filtering logic:
+            // filterProperties(selectedText, filterType);
+          });
+        });
+
+        // Close dropdowns when clicking outside
+        document.addEventListener("click", function () {
+          document
+            .querySelectorAll(".fliter-list.show")
+            .forEach((list) => list.classList.remove("show"));
+        });
+      });
+    </script>
+
+    <!-- External libraries -->
+    <!-- <div class="custom-cursor"></div>
+    <div class="cursor-ring"></div> -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      defer
+    ></script>
+    <script src="https://cdn.lordicon.com/lordicon.js" defer></script>
+
+    <!-- Your scripts WITH defer -->
+    <script src="/logic-and-animation.js" defer></script>
+    <script src="/gsap.js" defer></script>
+  </body>
+</html>
